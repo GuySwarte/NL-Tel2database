@@ -10,7 +10,7 @@ DB_HOST="localhost"  # of een ander hostadres indien nodig
 for i in {11111111..99999999}
 do
     # Voorvoeg "06-" aan het nummer
-    number="06-$i"
+    number="06$i"
 
     # SQL-query om het nummer in de database in te voegen
     query="INSERT INTO jouw_tabelnaam (telefoonnummer) VALUES ('$number');"
